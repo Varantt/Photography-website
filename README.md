@@ -1,5 +1,6 @@
 Photography Website
 A professional photography website built with Strapi (backend) and React (frontend), utilizing GraphQL for efficient data querying.
+
 Project Structure
 
 backend/: Strapi application (CMS and API)
