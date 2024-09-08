@@ -1,0 +1,12 @@
+@import url("../../variables.css");
+
+.nav-item {
+  @apply text-dark;
+  font-weight: 500;
+}
+
+
+
+.social-icons a:hover, .nav-item, .dropdown-item {
+  transition: color var(--transition-timing) var(--transition-timing-function);
+}

@@ -1,0 +1,10 @@
+.category-dropdown {
+  position: absolute;
+  z-index: 10;
+  transition: transform var(--transition-timing)
+      var(--transition-timing-function),
+    opacity var(--transition-timing) var(--transition-timing-function),
+    visibility var(--transition-timing) var(--transition-timing-function),
+    /* Delays visibility change */ height var(--transition-timing)
+      var(--transition-timing-function); /* Delays visibility change */
+}

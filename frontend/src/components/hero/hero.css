@@ -1,0 +1,42 @@
+@import url("../../variables.css");
+
+.hero-info-section {
+  position: relative;
+}
+
+.hero-info-section:hover span {
+  color: var(--terciary);
+}
+
+.hero-image-section, .hero-image-section img{
+    width: 100%;
+    height: 100%;
+}
+
+/* .hero-info-section::after {
+  content: "";
+  position: absolute;
+  left: -200px;
+  right: -200px;
+  background-color: var(--terciary); 
+  width: 100%;
+  height: 100%;
+  top: 30%;
+  z-index: -1;
+  border-radius: 2px;
+  transition: 
+    right var(--transition-timing) var(--transition-timing-function),
+    left var(--transition-timing) var(--transition-timing-function),
+    background-color var(--transition-timing) var(--transition-timing-function);
+}
+
+.hero-info-section:hover::after {
+  background-color: var(--primary);
+  right: 0;
+  left: 0
+} */
+
+
+.btn{
+  transition: background-color var(--transition-timing) var(--transition-timing-function);
+}

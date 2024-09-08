@@ -1,0 +1,32 @@
+@import url('non.geist');
+@import url('./variables.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  /* @apply font-geist;
+   */
+  /* font-family: 'Geist', sans-serif; */
+  /* font-family: var(--font-family); */
+  font-family: "Geist Variable";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-primary;
+}
+
+section, header{
+  margin-bottom: 6rem;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
