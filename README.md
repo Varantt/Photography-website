@@ -32,7 +32,9 @@ Install dependencies:
 npm install
 Start the React development server:
 npm start
+
 # or
+
 yarn start
 
 Access the website at http://localhost:3000
