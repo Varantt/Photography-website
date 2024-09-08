@@ -15,7 +15,7 @@ const Header: React.FC = () => {
 
   return (
     <header id="header" className="min-h-svh">
-      <div className="header-content  max-w-none md:max-w-default m-auto">
+      <div className="header-content  max-w-none p-3 md:p-0 md:max-w-default m-auto">
         <Navbar categoryDropdownItems={categoryDropdownItems} />
         {isHome && <Hero />}
       </div>

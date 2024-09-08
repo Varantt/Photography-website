@@ -1,0 +1,55 @@
+.about-title {
+  position: relative;
+}
+
+.about-title:after {
+  content: "";
+  @apply bg-terciary;
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0;
+  bottom: 0;
+}
+
+/* Apply animation only if user prefers normal motion (no reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .camera.camera-animate {
+    animation: rotate 2s linear forwards; /* Animation only when no reduced motion is preferred */
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  animation: flash var(--transition-timing) var(--transition-timing-function);
+}

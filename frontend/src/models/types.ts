@@ -54,6 +54,9 @@ interface DropdownItem {
   // link: string
 }
 
+interface ScrollState {
+  isVisible: boolean;
+}
 export type {
   UseFetchArgs,
   Pagination,
@@ -63,4 +66,5 @@ export type {
   ErrorProps,
   NavbarProps,
   HeaderDropdownStyle,
+  ScrollState
 };

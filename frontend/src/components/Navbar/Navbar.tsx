@@ -23,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ categoryDropdownItems }) => {
           <div className="nav-item hover:text-terciary ">
             <Link to="/projects">Projects</Link>
           </div>
-          <div className="nav-item hover:text-terciary " ref={categoryNavItem}>
+          <div className="nav-item hover:text-terciary relative" ref={categoryNavItem}>
             <Link to="/categories" className="category-dropdown-item">
               Categories
             </Link>

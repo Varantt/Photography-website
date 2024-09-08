@@ -20,7 +20,7 @@ const App: React.FC = () => {
       <ApolloProvider client={client}>
         <div className="app">
             <Header />
-          <div className="app-content  max-w-none md:max-w-default m-auto">
+          <div className="app-content p-3 md:p-0  max-w-none md:max-w-default m-auto">
             <Routes>
               {/* <Route path="/projects" element={<Projects />} /> */}
               <Route path="/project/:id" element={<SingleProject />} />
